@@ -1,10 +1,12 @@
 # Cifrado César
 
-## Función que computa/estrategia 
+## Función que computa
 
 Este programa aplica el cifrado de César sobre una cadena de caracteres usando la clave ingresada antes del mensaje a cifrar.
 
 El cifrado César consiste en sustituir cada letra del abecedario por una letra desplazada un número determinado de posiciones (clave). Por ejemplo, si ciframos usando la clave 1, reemplazaríamos la letra A con la B, la B con la C, y así sucesivamente hasta sustituir la Z por la A.
+
+## Estrategia 
 
 ### Primera parte, cifrado del caracter:
 
@@ -32,7 +34,7 @@ El mecanismo de resta es similar al de la suma, podemos identificar 3 casos. El 
 
 Una vez computada la resta si a izquierda del número tenemos un . este es reemplazado por un # para indicar que ya fue computada la resta y se continúa con la verificación del tamaño del siguietne número. En caso de que a izquierda haya un - significa que ya computamos la resta sobre el último número y entonces podemos finalizar el programa.
 
-## Alcance (cantidad de letras que abarca, números, etc.):
+## Alcance:
 
 En el alcance de esta Máquina de Turing debemos tener algunas cosas en cuenta. 
 
@@ -94,3 +96,4 @@ Por otro lado, debemos tener en cuenta que luego de la clave debemos ingresar un
 1011000 -> X<br>
 1011001 -> Y<br>
 1011010 -> Z<br>
+
