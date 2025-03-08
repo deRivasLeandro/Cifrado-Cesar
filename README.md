@@ -32,5 +32,65 @@ El mecanismo de resta es similar al de la suma, podemos identificar 3 casos. El 
 
 Una vez computada la resta si a izquierda del número tenemos un . este es reemplazado por un # para indicar que ya fue computada la resta y se continúa con la verificación del tamaño del siguietne número. En caso de que a izquierda haya un - significa que ya computamos la resta sobre el último número y entonces podemos finalizar el programa.
 
-## Alcance (cantidad de letras que abarca, números, etc.)
-Proyecto que realiza el cifrado César en binario con clave variable
+## Alcance (cantidad de letras que abarca, números, etc.):
+
+En el alcance de esta Máquina de Turing debemos tener algunas cosas en cuenta. 
+
+En primer lugar debemos indicar la clave a utilizar de forma binaria, al tener 26 posibles letras en el alfabeto, podemos utilizar una clave con un valor mayor o igual a 1 y a su vez menor o igual a 25, puesto que cifrar con clave 26 sería lo mismo que no cifrar y hacerlo usando una clave mayor, como 27, sería lo mismo que desplazarse el resto de dividir esa clave entre 26.
+
+Esta restricción nos limita a usar únicamente una de las siguientes claves:
+
+00001 -> 1
+00010 -> 2
+00011 -> 3
+00100 -> 4
+00101 -> 5
+00110 -> 6
+00111 -> 7
+01000 -> 8
+01001 -> 9
+01010 -> 10
+01011 -> 11
+01100 -> 12
+01101 -> 13
+01110 -> 14
+01111 -> 15
+10000 -> 16
+10001 -> 17
+10010 -> 18
+10011 -> 19
+10100 -> 20
+10101 -> 21
+10110 -> 22
+10111 -> 23
+11000 -> 24
+11001 -> 25
+
+Por otro lado, debemos tener en cuenta que luego de la clave debemos ingresar un - como separador, donde posteriormente a la derecha ingresaremos el valor ASCII de las letras del alfabeto que queramos cifrar. Estas mismas deben tener una longitud fija de 7 caracteres y, en caso de tener otra letra a cifrar delante debe tener un # como separador entre ambas. Los valores posibles para las letras a cifrar son los siguientes:
+
+1000001 -> A
+1000010 -> B
+1000011 -> C
+1000100 -> D
+1000101 -> E
+1000110 -> F
+1000111 -> G
+1001000 -> H
+1001001 -> I
+1001010 -> J
+1001011 -> K
+1001100 -> L
+1001101 -> M
+1001110 -> N
+1001111 -> O
+1010000 -> P
+1010001 -> Q
+1010010 -> R
+1010011 -> S
+1010100 -> T
+1010101 -> U
+1010110 -> V
+1010111 -> W
+1011000 -> X
+1011001 -> Y
+1011010 -> Z
