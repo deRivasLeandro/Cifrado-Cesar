@@ -308,3 +308,9 @@ Transiciones:
 ### Diseño de la tercera parte:
 
 ![JFLAP-tercera-parte](/img/tercera-parte.png)
+
+## Programa en simulator
+
+Simulator: <a>https://turingmachinesimulator.com/</a>
+
+Configuración: [mt-conf](MT.mt)
