@@ -334,6 +334,19 @@ Configuración: [mt-conf](/resources/MT.mt)
 
 ## Complejidad espacial:
 
+|         Input          |         Output         |   Long. w de entrada   |   Long. w de salida    |   
+| ---------------------- | ---------------------- | ---------------------- | ---------------------- |
+|     00001-1000001      |     00001-1000001      |           13           |           13           |
+|     00010-1000001      |     00010-1000011      |           13           |           13           |
+|     00011-1000001      |     00011-1000100      |           13           |           13           |
+|     00001-1011010      |     00001-1000001      |           13           |           13           |
+|     11001-1011010      |     11001-1011001      |           13           |           13           |
+| 00001-1000001#1000010  | 00001-1000010#1000011  |           21           |           21           |
+| 00010-1000001#1011001  | 00010-1000011#1000001  |           21           |           21           |
+| 00111-1000001#1000010  | 00001-1001000#1001001  |           21           |           21           |
+| 10011-1011001#1001111  | 00010-1010010#1001000  |           21           |           21           |
+| 11001-1011010#1011010  | 11001-1011001#1011010  |           21           |           21           |
+
 Podemos observar que la complejidad espacial es exactamente la misma que la del input ingresado, puesto que todos los computos se realizan sobre los carácteres ingresados en el mismo.
 
 El programa toma una entrada de la forma "A-B", "A-B#C", "A-B#C#D", etc. y produce una salida de igual longitud. En todos los casos, la longitud de la salida es proporcional a la de la entrada.
@@ -342,3 +355,20 @@ Entradas de la forma "A-B": La longitud de la salida es siempre la misma que la 
 Entradas de la forma "A-B#C": La longitud de la salida es la suma de las longitudes de A, B y C, más los caracteres adicionales ('-', '#'). Nuevamente, esto es lineal con respecto a la longitud de la entrada.
 
 Por lo que podemos asegurar que la complejidad espacial se encuentra representada por <b>O(n)<b>.
+
+## Complejidad temporal:
+
+|         Input          |         Output         |Cantidad de movimientos |      Incremento        |   
+| ---------------------- | ---------------------- | ---------------------- | ---------------------- |
+|     00001-1000001      |     00001-1000001      |           13           |           13           |
+|     00010-1000001      |     00010-1000011      |           13           |           13           |
+|     00011-1000001      |     00011-1000100      |           13           |           13           |
+|     00001-1011010      |     00001-1000001      |           13           |           13           |
+|     11001-1011010      |     11001-1011001      |           13           |           13           |
+| 00001-1000001#1000010  | 00001-1000010#1000011  |           21           |           21           |
+| 00010-1000001#1011001  | 00010-1000011#1000001  |           21           |           21           |
+| 00111-1000001#1000010  | 00001-1001000#1001001  |           21           |           21           |
+| 10011-1011001#1001111  | 00010-1010010#1001000  |           21           |           21           |
+| 11001-1011010#1011010  | 11001-1011001#1011010  |           21           |           21           |
+
+
