@@ -331,3 +331,14 @@ Configuración: [mt-conf](/resources/MT.mt)
 | 00111-1000001#1000010  | 00001-1001000#1001001  |
 | 10011-1011001#1001111  | 00010-1010010#1001000  |
 | 11001-1011010#1011010  | 11001-1011001#1011010  |
+
+## Complejidad espacial:
+
+Podemos observar que la complejidad espacial es exactamente la misma que la del input ingresado, puesto que todos los computos se realizan sobre los carácteres ingresados en el mismo.
+
+El programa toma una entrada de la forma "A-B", "A-B#C", "A-B#C#D", etc. y produce una salida de igual longitud. En todos los casos, la longitud de la salida es proporcional a la de la entrada.
+
+Entradas de la forma "A-B": La longitud de la salida es siempre la misma que la longitud de la entrada.
+Entradas de la forma "A-B#C": La longitud de la salida es la suma de las longitudes de A, B y C, más los caracteres adicionales ('-', '#'). Nuevamente, esto es lineal con respecto a la longitud de la entrada.
+
+Por lo que podemos asegurar que la complejidad espacial se encuentra representada por <b>O(n)<b>.
