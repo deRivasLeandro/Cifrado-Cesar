@@ -297,4 +297,6 @@ Transiciones:
 
 ## Diseño de JFLAP:
 
-![JFLAP-primera-parte](https://drive.google.com/file/d/1Dmbu2kAL9kQzW1Z5tyzJ1D8_TCu_fIsb/view?usp=sharing)
+![JFLAP-primera-parte](/imag/primera-parte.png)
+![JFLAP-segunda-parte](/imag/segunda-parte.png)
+![JFLAP-tercera-parte](/imag/tercera-parte.png)
