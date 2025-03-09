@@ -299,18 +299,18 @@ Transiciones:
 
 ### Diseño de la primera parte:
 
-![JFLAP-primera-parte](/img/primera-parte.png)
+![JFLAP-primera-parte](/resources/img/primera-parte.png)
 
 ### Diseño de la segunda parte:
 
-![JFLAP-segunda-parte](/img/segunda-parte.png)
+![JFLAP-segunda-parte](/resources/img/segunda-parte.png)
 
 ### Diseño de la tercera parte:
 
-![JFLAP-tercera-parte](/img/tercera-parte.png)
+![JFLAP-tercera-parte](/resources/img/tercera-parte.png)
 
 ## Programa en simulator
 
 Simulator: <a>https://turingmachinesimulator.com/</a>
 
-Configuración: [mt-conf](MT.mt)
+Configuración: [mt-conf](/resources/MT.mt)
