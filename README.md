@@ -419,5 +419,5 @@ Estos casos reflejan "la peor situación" posible para cada longitud del input y
 ![grafico-temporal-espacial](/resources/img/grafico-movimientos-espacio.png)
 
 ### Con escala logaritmica:
-
+(Con esta escala se visualiza mejor el crecimiento exponencial de la complejidad temporal)
 ![grafico-temporal-espacial](/resources/img/grafico-movimientos-espacio-log.png)
