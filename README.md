@@ -394,3 +394,30 @@ Por lo que podemos asegurar que la complejidad espacial se encuentra representad
 | 01111-1011000#1011000#1011000  | 01111-1001100#1001100#1001100  |           660          |           302           |
 | 01111-1011000#1011000#1011000#1011000  | 01111-1001100#1001100#1001100#1001100  |           1042         |         382        |
 
+### Incremento Lineal con el input de la clave:
+En los primeros casos, donde solo se incrementa el número binario de la clave, se observa un incremento constante de 2 movimientos por cada bit desplazado a izquierda en el input. Esto sugiere una complejidad lineal, O(n), donde "n" crece con el tamaño del número de la clave.
+
+### Incrementos Mayores en Casos Específicos:
+Los incrementos de 18 movimientos indican que hay casos específicos que requieren un mayor número de operaciones. Estos casos pueden deberse a la necesidad de realizar operaciones adicionales, como "acarreo" en la suma binaria, que requieren recorrer una mayor parte del input.
+
+### Operaciones Constantes (Caracter):
+Los casos donde se mantiene constante la cantidad de movimientos indican que ciertas operaciones no dependen del valor del input de caracter, lo que sugiere una complejidad constante, O(1). En este caso puntual, observamos que modificar el valor que tiene el caracter, pareciera no impactar en la cantidad de operaciones a realizar.
+
+### Operaciones de Resta:
+Los casos de resta muestran un incremento proporcional a la longitud, pero con un factor mayor que la suma simple, lo que podría indicar una complejidad de O(n) pero con una constante multiplicativa mayor.
+
+### Agregar Caracter:
+Agregar carácteres, o concatenar inputs, aumenta significativamente la cantidad de movimientos. El incremento no es estrictamente lineal, sino que parece aumentar de forma cuadrática o cercana a ella. Esto sugiere que al concatenar una gran cantidad de numeros, la complejidad aumentara considerablemente.
+
+### Casos Complejos por Longitud:
+Estos casos reflejan "la peor situación" posible para cada longitud del input y confirman que a medida que aumenta la longitud del mismo, la cantidad de movimientos crece de forma acelerada. Esto refuerza la idea de una complejidad mayor que lineal para operaciones que involucran concatenación.
+
+## Gráficos de complejidad temporal y espacial (aproximados)
+
+### Original:
+
+![grafico-temporal-espacial](/resources/img/grafico-movimientos-espacio.png)
+
+### Con escala logaritmica:
+
+![grafico-temporal-espacial](/resources/img/grafico-movimientos-espacio-log.png)
