@@ -313,7 +313,7 @@ Transiciones:
 
 ## Programa en simulator
 
-Simulator: <a>https://turingmachinesimulator.com/</a>
+Simulator: <a>http://turingmachinesimulator.com/shared/rowquykrdy/</a>
 
 Configuración: [mt-conf](/resources/MT.mt)
 
